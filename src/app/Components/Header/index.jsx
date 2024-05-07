@@ -5,6 +5,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 
 
@@ -13,24 +14,14 @@ function classNames(...classes) {
 }
 
 export default function Header() {
-  const [currentUrl, setCurrentUrl] = useState('');
-
-  useEffect(() => {
-    // Check if the code is running on the client side
-    if (process) {
-      // Access the current page URL using window.location
-      setCurrentUrl(window.location.origin);
-    }
-  }, []);
 
   const navigation = [
-    { name: 'Home', href: `${currentUrl}/`, current: false },
-    { name: 'Esercizi', href: `${currentUrl}/esercizi`, current: false },
-    { name: 'Risorse utili', href: `${currentUrl}/risorse`, current: false },
-    { name: 'Team', href: `${currentUrl}/team`, current: false },
+    { name: 'Home', href: '/', current: false },
+    { name: 'Esercizi', href: './esercizi', current: false },
+    { name: 'Risorse utili', href: './risorse', current: false },
+    { name: 'Team', href: './team', current: false },
   ]
 
-  console.log(currentUrl)
   return (
     <Disclosure as="nav" className="bg-orange-500">
       {({ open }) => (
@@ -53,17 +44,12 @@ export default function Header() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-orange-900 text-white' : 'text-white hover:bg-orange-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
+                      <Link aria-current={item.current ? 'page' : undefined} key={item.name} href={item.href} className={classNames(
+                        item.current ? 'bg-orange-900 text-white' : 'text-white hover:bg-orange-700 hover:text-white',
+                        'rounded-md px-3 py-2 text-sm font-medium'
+                      )}>
+                          {item.name}
+                      </Link>
                     ))}
                   </div>
                 </div>
