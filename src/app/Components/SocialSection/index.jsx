@@ -1,6 +1,11 @@
 import Image from 'next/image'
 import LogoShetech from '/public/LogoSheTech.png'
 import LogoBitrock from '/public/Bitrock.png'
+import LinkedIn from '/public/linkedInicon.png'
+import Instagram from '/public/instagram.png'
+import Spotify from '/public/spotify.png'
+import Facebook from '/public/facebook.png'
+import Medium from '/public/medium.png'
 
 export const SocialSection = () => {
   return (
@@ -21,10 +26,10 @@ export const SocialSection = () => {
                         style={{ width: '150px', height: 'auto', margin: '0 auto' }}
                   />
                   <div className='flex flex-row gap-4 mt-5 justify-center'>
-                    <a href='https://www.linkedin.com/company/shetech/' target='_blank'><Image src={'/linkedInicon.png'} width={24} height={24} /></a>
-                    <a href='https://www.instagram.com/shetech_italy?igsh=MW53dXFqbWhuMXFrZA==' target='_blank'><Image src={'/instagram.png'} width={24} height={24} /></a>
-                    <a href='https://open.spotify.com/show/32WuZrI8uVVXjr6tj0drFy' target='_blank'><Image src={'/spotify.png'} width={24} height={24} /></a>
-                    <a href='https://www.facebook.com/shetechitaly/' target='_blank'><Image src={'/facebook.png'} width={24} height={24} /></a>
+                    <a href='https://www.linkedin.com/company/shetech/' target='_blank'><Image src={LinkedIn} width={24} height={24} /></a>
+                    <a href='https://www.instagram.com/shetech_italy?igsh=MW53dXFqbWhuMXFrZA==' target='_blank'><Image src={Instagram} width={24} height={24} /></a>
+                    <a href='https://open.spotify.com/show/32WuZrI8uVVXjr6tj0drFy' target='_blank'><Image src={Spotify} width={24} height={24} /></a>
+                    <a href='https://www.facebook.com/shetechitaly/' target='_blank'><Image src={Facebook} width={24} height={24} /></a>
                   </div>
                 </div>
                 <div className='bg-[#e9e7e89e] px-20 py-10 rounded text-center min-w-96 min-h-80 flex flex-col justify-center'>
@@ -36,8 +41,10 @@ export const SocialSection = () => {
                       style={{ width: '200px', height: 'auto', margin: '0 auto' }}
                     />
                     <div className='flex flex-row gap-4 mt-5 justify-center'>
-                      <a href='https://www.linkedin.com/company/bitrock-srl/mycompany/verification/' target='_blank'><Image src={'/linkedInicon.png'} width={24} height={24} /></a>
-                      <a href='https://www.instagram.com/bitrockteam?igsh=MW9idHhkNHlmenBsNQ==' target='_blank'><Image src={'/instagram.png'} width={24} height={24} /></a>
+                      <a href='https://www.linkedin.com/company/bitrock-srl/mycompany/verification/' target='_blank'><Image src={LinkedIn} width={24} height={24} /></a>
+                      <a href='https://www.instagram.com/bitrockteam?igsh=MW9idHhkNHlmenBsNQ==' target='_blank'><Image src={Instagram} width={24} height={24} /></a>
+                      <a href='https://web.facebook.com/bitrockIT' target='_blank'><Image src={Facebook} width={24} height={24} /></a>
+                      <a href='https://medium.com/@BitrockIT' target='_blank'><Image src={Medium} width={24} height={24} /></a>
                     </div>
                 </div>
               </div>

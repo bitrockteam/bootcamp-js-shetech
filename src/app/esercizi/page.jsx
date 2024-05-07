@@ -1,11 +1,12 @@
 'use-client'
-
+import styles from './styles.module.css'
 import Image from "next/image"
+import es1 from '/public/es1.png'
 
 export default function Esercizi() {
 
   const isEventStarted = () => {
-    const dataDaConfrontare = new Date('2024-05-06').setHours(12, 5, 0);
+    const dataDaConfrontare = new Date('2024-06-08').setHours(8, 0, 0);
     const now = new Date();
     return dataDaConfrontare > now;
   };
@@ -25,17 +26,20 @@ export default function Esercizi() {
           <p className="mt-6"> • I link saranno attivi il giorno dell'evento.</p>
           <p className="mt-6"> • Gli esercizi sono divisi in step, comincia dallo step 1 e svolgi l'esercizio, successivamente passa allo step successivo (all'interno troverai la soluzione di quello precedente) e confronta con quello che hai fatto tu.</p>
         </div>
-        <div className="mt-6">
-          <h2 className="text-2xl font-bold my-4">Playground:</h2>
-          <p> Il playground è uno spazio libero che useremo per prendere familiarità con il codice javascript</p>
-          <a href="https://stackblitz.com/edit/vitejs-vite-iwb7pk?file=main.js" target="blank"><button className="bg-orange-500 rounded px-4 py-2 text-white my-5">Vai al playground </button></a>
-          <p></p>
+        <div className="mt-6 flex justify-between">
+          <div>
+            <h2 className="text-2xl font-bold my-4">Playground:</h2>
+            <p> Il playground è uno spazio libero che useremo per prendere familiarità con il codice javascript</p>
+            <a href="https://stackblitz.com/edit/vitejs-vite-iwb7pk?file=main.js" target="blank"><button className="bg-orange-500 rounded px-4 py-2 text-white my-5">Vai al playground </button></a>
+          </div>
         </div>
-        <div className="mt-4">
-          <h2 className="text-2xl font-bold my-4">Esercizio 1: Cambiamo colore allo sfondo della pagina</h2>
-          <p> Lo scopo di questo esercizio è quello di cambiare lo sfondo della pagina in base ad un array di colori che abbiamo definito in precedenza</p>
-          <a href="https://stackblitz.com/@BitrockFeStackblitz/collections/shetech-bootcamp-2024" target="blank"><button disabled={isEventStarted()} className="bg-orange-500 rounded px-4 py-2 text-white my-5">Vai all'esercizio </button></a>
-          <p></p>
+        <div className="mt-4 flex align-items-center">
+          <div>
+            <h2 className="text-2xl font-bold my-4">Esercizio 1: Cambiamo colore allo sfondo della pagina</h2>
+            <p> Lo scopo di questo esercizio è quello di cambiare lo sfondo della pagina in base ad un array di colori che abbiamo definito in precedenza</p>
+            <a href="https://stackblitz.com/@BitrockFeStackblitz/collections/shetech-bootcamp-2024" target="blank"><button disabled={isEventStarted()} className="bg-orange-500 rounded px-4 py-2 text-white my-5">Vai all'esercizio </button></a>
+          </div>
+          <Image src={es1} width={'auto'} height={400} />
         </div>
         <div className="mt-4">
           <h2 className="text-2xl font-bold my-4">Esercizio 2: Contatore</h2>
