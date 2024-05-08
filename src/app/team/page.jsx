@@ -1,8 +1,8 @@
 import Image from "next/image"
+import LinkedIn from "/public/linkedInicon.png"
 
 
 const people = [
-
   {
     name: 'Loredana Cascarano',
     role: 'Mentor',
@@ -13,6 +13,7 @@ const people = [
   {
     name: 'Gabriella Moro',
     role: 'Mentor',
+    job: 'Lead UX Designer',
     linkedIn: 'https://www.linkedin.com/in/gabriellamoro/',
     imageUrl:
       'https://media.licdn.com/dms/image/D4D03AQFprXMDXcr7mg/profile-displayphoto-shrink_800_800/0/1698658965411?e=1720051200&v=beta&t=EqhkWVy1e2eYgP56mv7r6YvA8qp3by-DBm3aLcI67FE',
@@ -21,6 +22,7 @@ const people = [
   {
     name: 'Giuseppe Figliuolo',
     role: 'Mentor',
+    job: 'UX/UI Engineering',
     imageUrl:
       'https://media.licdn.com/dms/image/C4D03AQFIspJN-UX_2Q/profile-displayphoto-shrink_400_400/0/1613118267649?e=1720051200&v=beta&t=i2Hf3evfaSUItn4i6l0CpWLBcEkoOk2QwqTxvS00l6s',
     linkedIn: 'https://www.linkedin.com/in/giuseppe-figliuolo-51103818a/'
@@ -28,6 +30,7 @@ const people = [
   {
     name: 'Federico Muzzo',
     role: 'Mentor',
+    job: 'UX/UI Engineering',
     linkedIn: 'https://www.linkedin.com/in/federico-m-475b3869/',
     imageUrl:
       'https://media.licdn.com/dms/image/C4D03AQHfsrYisgPI5w/profile-displayphoto-shrink_400_400/0/1645231240984?e=1720051200&v=beta&t=VZPUIyCVLeQa9L_qdqd06AYQz-vg8ubTwC_2WZrgFy8',
@@ -35,6 +38,7 @@ const people = [
   {
     name: 'Erik Fazio',
     role: 'Mentor',
+    job: 'UX/UI Engineering',
     linkedIn: 'https://www.linkedin.com/in/erik-fazio/',
     imageUrl:
       'https://media.licdn.com/dms/image/D4D03AQGV-OT6O2AD4A/profile-displayphoto-shrink_400_400/0/1703143215033?e=1720051200&v=beta&t=qLV_FuzIpT6K3DswTuOxMH9Gpt8w-Z2IwrtliBlTmPY',
@@ -42,10 +46,10 @@ const people = [
   {
     name: 'Stefano Bruno',
     role: 'Mentor',
+    job: 'Head of UX/UI Engineering',
     imageUrl:
       'https://media.licdn.com/dms/image/D4D03AQEuUnPrBrGhqg/profile-displayphoto-shrink_400_400/0/1673878519084?e=1720051200&v=beta&t=l2Dt-oC9lqkiZ-IJi7nIvX304sthFgvxaCb_qloBNMA',
     linkedIn: 'https://www.linkedin.com/in/stefano-bruno',
-
   },
 ]
 
@@ -54,7 +58,7 @@ export default function Team() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
         <div className="max-w-30xl">
-          <h2 className="text-3xl font-bold tracking-tight text-[#505050] sm:text-4xl">Conosci i nostri mentor</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Conosci i nostri mentor</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
               Scopri i mentor che parteciperanno al nostro bootcamp JavaScript e preparati ad essere guidato in questa nuova sfida.
           </p>
@@ -65,11 +69,12 @@ export default function Team() {
           {people.map((person) => (
             <li key={person.name}>
               <div className="flex items-center gap-x-6">
-                {person.imageUrl && <img className="h-28 w-28 rounded-full" src={person.imageUrl} alt="" />}
+                {person.imageUrl && <img className="h-28 w-28 rounded-full" src={person.imageUrl} alt="person" />}
                 <div>
                   <h3 className="text-base font-semibold leading-7 tracking-tight text-[#505050]">{person.name}</h3>
-                  <p className="text-sm font-semibold leading-6 text-[#505050]">{person.role}</p>
-                  {person.linkedIn && <a className="mt-3" target="_blank" href={person.linkedIn}> <Image src={'/linkedInicon.png'} width={24} height={24} /></a>}
+                  <p className="text-sm py-1 font-semibold leading-6 text-black-900">{person.role}</p>
+                  <p className="text-sm py-1 font-semibold leading-6 text-black-900">{person.job}</p>
+                  {person.linkedIn && <a className="mt-3" target="_blank" href={person.linkedIn}> <Image src={LinkedIn} width={24} height={24} /></a>}
                 </div>
               </div>
             </li>

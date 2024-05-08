@@ -9,7 +9,7 @@ import es4 from '/public/es4.png'
 export default function Esercizi() {
 
   const isEventStarted = () => {
-    const dataDaConfrontare = new Date('2024-04-08').setHours(8, 0, 0);
+    const dataDaConfrontare = new Date('2024-06-08').setHours(8, 0, 0);
     const now = new Date();
     return dataDaConfrontare > now;
   };
@@ -74,7 +74,7 @@ export default function Esercizi() {
               <p>{esercizio.subtitle}</p>
               <a href={esercizio.url} target="blank"><button disabled={esercizio.disabled} className="bg-orange-500 rounded px-4 py-2 text-white my-5">Vai all'esercizio </button></a>
             </div>
-            {esercizio.img && <Image src={esercizio.img} width={200} height={400} />}
+            {esercizio.img && <Image src={esercizio.img} width={250} height={500} />}
           </div>
         ))}
       </div>

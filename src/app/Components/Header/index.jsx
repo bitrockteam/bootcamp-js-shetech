@@ -16,7 +16,7 @@ function classNames(...classes) {
 export default function Header() {
 
   const navigation = [
-    { name: 'Home', href: '/', current: false },
+    { name: 'Home', href: './', current: false },
     { name: 'Esercizi', href: './esercizi', current: false },
     { name: 'Risorse utili', href: './risorse', current: false },
     { name: 'Team', href: './team', current: false },
@@ -36,7 +36,7 @@ export default function Header() {
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon color='white' className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -64,8 +64,9 @@ export default function Header() {
                   key={item.name}
                   as="a"
                   href={item.href}
+                  color='white'
                   className={classNames(
-                    item.current ? 'bg-orange-900 text-white' : 'text-gray-300 hover:bg-orange-700 hover:text-white',
+                    item.current ? 'bg-orange-900 text-white' : 'text-white hover:bg-orange-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

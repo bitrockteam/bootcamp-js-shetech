@@ -34,7 +34,7 @@ export const HeroSection = () => {
               08/06/2024 - Milano @TalentGarden Calabiana
             </p>
             <p className="mt-6 py-1 text-2xl font-bold leading-8 text-[#505050] ">
-              08:30 / 17:00
+              09:30 / 17:00
             </p>
             <div className="mt-10 mb-10 flex items-center justify-center gap-x-6">
               <a
