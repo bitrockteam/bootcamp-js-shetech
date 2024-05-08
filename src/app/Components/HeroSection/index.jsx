@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import LogoShetech from '/public/LogoSheTech.png'
-import LogoBitrock from '/public/Bitrock.png'
+import LogoBitrock from '/public/Bitrock_Whitepaper_GreenIT.png'
 
 export const HeroSection = () => {
   return (

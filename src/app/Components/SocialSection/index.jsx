@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import LogoShetech from '/public/LogoSheTech.png'
-import LogoBitrock from '/public/Bitrock.png'
+import LogoBitrock from '/public/Bitrock_Whitepaper_GreenIT.png'
 import LinkedIn from '/public/linkedInicon.png'
 import Instagram from '/public/instagram.png'
 import Spotify from '/public/spotify.png'
@@ -14,7 +14,7 @@ export const SocialSection = () => {
           <div className="mx-auto max-w-5xl py-10 sm:py-48 lg:py-8">
             <div className="text-center">
               <h1 className="text-4xl mb-10 font-bold tracking-tight text-[#505050] sm:text-4xl">
-                Seguici sui nostri canali social.
+                Seguici sui nostri canali social
               </h1>
               <div className="flex gap-4 flex-wrap justify-items-center align-middle items-center md:gap-20 py-10 mt-8s text-center justify-center">
                 <div className='bg-[#e9e7e89e] px-20 py-10 rounded text-center min-w-96 min-h-80 flex flex-col justify-center'>

@@ -17,7 +17,7 @@ export default function Esercizi() {
   const esercizi = [
     {
       title: 'Playground',
-      subtitle: 'Il playground è uno spazio libero che useremo per prendere familiarità con il codice javascript',
+      subtitle: 'Il playground è uno spazio libero che useremo per prendere familiarità con il codice JavaScript',
       img: '',
       url: 'https://stackblitz.com/edit/vitejs-vite-iwb7pk?file=main.js',
       disabled: isEventStarted(),
@@ -57,15 +57,18 @@ export default function Esercizi() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-18 px-6 lg:px-8 xl:grid-cols-1">
-        <div className="max-w-2xl text-center md:text-left">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Esercizi della giornata di Javascript</h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Qui sotto troverai i link al playground e agli esercizi che faremo durante la giornata di bootcamp.
-            Per fare gli esercizi e fare pratica sul codice utilizzeremo <a target="blank" href="https://stackblitz.com">stackbitz</a>, un editor di codice online che ci permette di sviluppare sul proprio browser e condividere con altri sviluppatori quello che abbiamo fatto.
-          </p>
-          <p className="mt-6"> • Per poter visualizzare gli esercizi clicca sul bottone vai all'esercizio il giorno dell'evento.</p>
-          <p className="mt-6"> • I link saranno attivi il giorno dell'evento.</p>
-          <p className="mt-6"> • Gli esercizi sono divisi in step, comincia dallo step 1 e svolgi l'esercizio, successivamente passa allo step successivo (all'interno troverai la soluzione di quello precedente) e confronta con quello che hai fatto tu.</p>
+        <div className="max-w-2xl text-center md:text-left flex">
+          <div>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Esercizi della giornata di JavaScript</h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Qui sotto troverai i link al playground e agli esercizi che faremo durante la giornata di bootcamp.
+              Per fare gli esercizi e fare pratica sul codice utilizzeremo <a target="blank" href="https://stackblitz.com">stackbitz</a>, un editor di codice online che ci permette di sviluppare sul proprio browser e condividere con altri sviluppatori quello che abbiamo fatto.
+            </p>
+            <p className="mt-6"> • Per poter visualizzare gli esercizi clicca sul bottone vai all'esercizio il giorno dell'evento.</p>
+            <p className="mt-6"> • I link saranno attivi il giorno dell'evento.</p>
+            <p className="mt-6"> • Gli esercizi sono divisi in step, comincia dallo step 1 e svolgi l'esercizio, successivamente passa allo step successivo (all'interno troverai la soluzione di quello precedente) e confronta con quello che hai fatto tu.</p>
+          </div>
+          {/* <Image src={gruppo} width={250} height={500} /> */}
         </div>
         {esercizi.map((esercizio) => (
           <div className="my-8 text-center md:text-left flex flex-col justify-between gap-20 items-center md:flex-row">
