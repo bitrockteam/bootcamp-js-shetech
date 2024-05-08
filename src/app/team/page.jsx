@@ -6,6 +6,7 @@ const people = [
   {
     name: 'Loredana Cascarano',
     role: 'Mentor',
+    job: 'Software Developer & Devops Engineer',
     linkedIn: 'https://www.linkedin.com/in/loredana-cascarano/',
     imageUrl:
       'https://media.licdn.com/dms/image/D4D03AQH_br4K2UrGQA/profile-displayphoto-shrink_400_400/0/1694439578578?e=1720051200&v=beta&t=jFW70gEH1JDldAT-zUR8-nRpiACZ102cFaDbetsMe1M',
@@ -58,9 +59,9 @@ export default function Team() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
         <div className="max-w-30xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Conosci i nostri mentor</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Conosci le/i nostre/i mentor</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-              Scopri i mentor che parteciperanno al nostro bootcamp JavaScript e preparati ad essere guidato in questa nuova sfida.
+              Scopri le mentor e i mentor che parteciperanno al nostro bootcamp JavaScript e preparati ad essere guidata/o in questa nuova sfida.
           </p>
         </div>
         </div>
