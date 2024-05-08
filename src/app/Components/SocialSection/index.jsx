@@ -38,7 +38,7 @@ export const SocialSection = () => {
                       alt="LogoBitrock"
                       width={0}
                       height={0}
-                      style={{ width: '200px', height: 'auto', margin: '0 auto' }}
+                      style={{ width: '250px', height: 'auto', margin: '0 auto' }}
                     />
                     <div className='flex flex-row gap-4 mt-5 justify-center'>
                       <a href='https://www.linkedin.com/company/bitrock-srl/mycompany/verification/' target='_blank'><Image alt='icon' src={LinkedIn} width={24} height={24} /></a>

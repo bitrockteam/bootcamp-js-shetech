@@ -5,6 +5,7 @@ import es1 from '/public/es1.png'
 import es2 from '/public/es2.png'
 import es3 from '/public/es3.png'
 import es4 from '/public/es4.png'
+import gruppo from '/public/gruppo.jpg'
 
 export default function Esercizi() {
 
@@ -57,18 +58,17 @@ export default function Esercizi() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-18 px-6 lg:px-8 xl:grid-cols-1">
-        <div className="max-w-2xl text-center md:text-left flex">
-          <div>
+        <div className="max-w-12xl text-center md:text-left flex flex-col justify-between gap-20 items-top md:flex-row">
+          <div className='max-w-2xl'>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Esercizi della giornata di JavaScript</h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Qui sotto troverai i link al playground e agli esercizi che faremo durante la giornata di bootcamp.
-              Per fare gli esercizi e fare pratica sul codice utilizzeremo <a target="blank" href="https://stackblitz.com">stackbitz</a>, un editor di codice online che ci permette di sviluppare sul proprio browser e condividere con altri sviluppatori quello che abbiamo fatto.
+              Di seguito troverai i collegamenti al playground e agli esercizi che verranno affrontati durante la giornata di bootcamp. <br/><br/>Per svolgere gli esercizi e praticare la scrittura del codice, utilizzeremo <a target='blank' href='https://stackblitz.com/'><b>Stackbitz</b></a>, un editor di codice online che consente lo sviluppo direttamente dal browser e la condivisione delle nostre soluzioni con altri sviluppatori.
             </p>
-            <p className="mt-6"> • Per poter visualizzare gli esercizi clicca sul bottone vai all'esercizio il giorno dell'evento.</p>
-            <p className="mt-6"> • I link saranno attivi il giorno dell'evento.</p>
-            <p className="mt-6"> • Gli esercizi sono divisi in step, comincia dallo step 1 e svolgi l'esercizio, successivamente passa allo step successivo (all'interno troverai la soluzione di quello precedente) e confronta con quello che hai fatto tu.</p>
+            <p className="mt-6"> • Per accedere agli esercizi, fare clic sul pulsante "Vai all'esercizio" il giorno dell'evento.</p>
+            <p className="mt-6"> • I collegamenti saranno attivi dal giorno dell'evento.</p>
+            <p className="mt-6"> • Gli esercizi sono strutturati in step: inizia dallo step 1, completa l'esercizio e procedi al successivo (ogni step contiene la soluzione dello step precedente). Confronta poi la tua soluzione con quella fornita.</p>
           </div>
-          {/* <Image src={gruppo} width={250} height={500} /> */}
+          {<Image src={gruppo} width={400} height={'auto'} />}
         </div>
         {esercizi.map((esercizio) => (
           <div className="my-8 text-center md:text-left flex flex-col justify-between gap-20 items-center md:flex-row">

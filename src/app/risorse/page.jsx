@@ -46,7 +46,7 @@ export default function Risorse() {
               <a target="_blank" href="https://www.w3schools.com/js/js_if_else.asp"><p className="ml-5 my-2 hover:underline"> • If condition</p></a>
             </li>
             <li className="my-10">
-              <b>5. Manipoliazione del dom</b>
+              <b>6. Manipoliazione del dom</b>
               <a target="_blank" href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp"><p className="ml-5 my-2 hover:underline"> • Cambiare il Contenuto HTML</p></a>
               <a target="_blank" href="https://www.w3schools.com/js/js_htmldom_css.asp"><p className="ml-5 my-2 hover:underline"> • Cambiare lo Stile HTML</p></a>
               <a target="_blank" href="https://www.w3schools.com/jsref/met_document_createelement.asp"><p className="ml-5 my-2 hover:underline"> • HTML DOM Document createElement</p></a>
