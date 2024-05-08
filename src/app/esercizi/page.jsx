@@ -45,7 +45,7 @@ export default function Esercizi() {
     },
     {
       title: 'Esercizio 4: Disegna',
-      subtitle: '',
+      subtitle: 'Implementa un\'applicazione di disegno in JavaScript che permetta agli utenti di creare immagini in stile pixel art. L\'applicazione offre un\'area di disegno personalizzabile e strumenti di disegno per colorare i pixel. È un\'opportunità per praticare la manipolazione del DOM, gestire gli eventi utente e implementare la logica di disegno basata su pixel.',
       img: es4,
       url: 'https://stackblitz.com/@BitrockFeStackblitz/collections/shetech-bootcamp-2024-esercizio-4',
       disabled: isEventStarted(),
