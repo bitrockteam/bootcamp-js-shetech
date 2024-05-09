@@ -14,7 +14,6 @@ export default function Risorse() {
             Qui sotto troverai la lista degli argomenti che affronteremo durante gli esercizi e i link che rimandano alla documentazione.
             Ti invitiamo ad usarli durante l'esercitazione, piuttosto che guardare l'esercizio già completo
           </p></div>
-          <img src="https://www.w3schools.com/tryit/best2.gif" width={400} height={'600px'} />
         </div>
         <ul>
           <li className="my-10">
