@@ -12,7 +12,7 @@ export default function Risorse() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Argomenti affrontati durante gli esercizi</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Qui sotto troverai la lista degli argomenti che affronteremo durante gli esercizi e i link che rimandano alla documentazione.
-            Ti invitiamo ad usarli durante l'esercitazione, piuttosto che guardare l'esercizio già completo.
+            Ti invitiamo ad usarli durante l'esercitazione, piuttosto che guardare l'esercizio già completo
           </p></div>
           <img src="https://www.w3schools.com/tryit/best2.gif" width={400} height={'600px'} />
         </div>
