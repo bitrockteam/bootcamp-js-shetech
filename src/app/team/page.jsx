@@ -52,6 +52,14 @@ const people = [
       'https://media.licdn.com/dms/image/D4D03AQEuUnPrBrGhqg/profile-displayphoto-shrink_400_400/0/1673878519084?e=1720051200&v=beta&t=l2Dt-oC9lqkiZ-IJi7nIvX304sthFgvxaCb_qloBNMA',
     linkedIn: 'https://www.linkedin.com/in/stefano-bruno',
   },
+  {
+    name: 'Marco Petreri',
+    role: 'Mentor',
+    job: 'UX/UI Engineering',
+    imageUrl:
+      'https://media.licdn.com/dms/image/D5603AQFVVbsjhjQm-A/profile-displayphoto-shrink_400_400/0/1709721068353?e=1723075200&v=beta&t=V-KKdmejM4EVqyOgdMW1xNPs-k9T7YD_jfeU9prp26I',
+    linkedIn: 'https://www.linkedin.com/in/marco-petreri/',
+  },
 ]
 
 export default function Team() {
