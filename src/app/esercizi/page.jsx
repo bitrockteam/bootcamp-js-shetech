@@ -10,7 +10,7 @@ import gruppo from '/public/gruppo.jpg'
 export default function Esercizi() {
 
   const isEventStarted = () => {
-    const dataDaConfrontare = new Date('2024-06-08').setHours(8, 0, 0);
+    const dataDaConfrontare = new Date('2024-06-08').setHours(6, 0, 0);
     const now = new Date();
     return dataDaConfrontare > now;
   };
