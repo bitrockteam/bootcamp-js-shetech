@@ -20,7 +20,7 @@ export default function Esercizi() {
       title: 'Playground',
       subtitle: 'Il playground è uno spazio libero che useremo per prendere familiarità con il codice JavaScript',
       img: '',
-      url: 'https://stackblitz.com/edit/vitejs-vite-iwb7pk?file=main.js',
+      url: 'https://stackblitz.com/@BitrockFeStackblitz/collections/shetech-bootcamp-2024-playground',
       disabled: isEventStarted(),
     },
     {
