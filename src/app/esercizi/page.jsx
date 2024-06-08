@@ -9,11 +9,6 @@ import gruppo from '/public/gruppo.jpg'
 
 export default function Esercizi() {
 
-  const isEventStarted = () => {
-    const dataDaConfrontare = new Date('2024-06-08').setHours(6, 0, 0);
-    const now = new Date();
-    return dataDaConfrontare > now;
-  };
 
   const esercizi = [
     {
@@ -21,35 +16,35 @@ export default function Esercizi() {
       subtitle: 'Il playground è uno spazio libero che useremo per prendere familiarità con il codice JavaScript',
       img: '',
       url: 'https://stackblitz.com/@BitrockFeStackblitz/collections/shetech-bootcamp-2024-playground',
-      disabled: isEventStarted(),
+      disabled: false,
     },
     {
       title: 'Esercizio 1: Cambiamo colore allo sfondo della pagina',
       subtitle: 'Lo scopo di questo esercizio è quello di cambiare lo sfondo della pagina in base ad un array di colori che abbiamo definito in precedenza',
       img: es1,
       url: 'https://stackblitz.com/@BitrockFeStackblitz/collections/shetech-bootcamp-2024',
-      disabled: isEventStarted(),
+      disabled: false,
     },
     {
       title: 'Esercizio 2: Contatore',
       subtitle: 'Lo scopo di questo esercizio è quello di far funzionare il contatore, aumentando o diminuendo il suo valore',
       img: es2,
       url: 'https://stackblitz.com/@BitrockFeStackblitz/collections/shetech-bootcamp-2024-esercizio-2',
-      disabled: isEventStarted(),
+      disabled: false,
     },
     {
       title: 'Esercizio 3: Lista della spesa',
       subtitle: 'Lo scopo di questo esercizio è quello di aggiungere degli elementi inseriti dall\'utente ad una lista e mostrarli graficamente sulla pagina',
       img: es3,
       url: 'https://stackblitz.com/@BitrockFeStackblitz/collections/shetech-bootcamp-2024-esercizio-3',
-      disabled: isEventStarted(),
+      disabled: false,
     },
     {
       title: 'Esercizio 4: Disegna',
       subtitle: 'Implementa un\'applicazione di disegno in JavaScript che permetta agli utenti di creare immagini in stile pixel art. L\'applicazione offre un\'area di disegno personalizzabile e strumenti di disegno per colorare i pixel. È un\'opportunità per praticare la manipolazione del DOM, gestire gli eventi utente e implementare la logica di disegno basata su pixel.',
       img: es4,
       url: 'https://stackblitz.com/@BitrockFeStackblitz/collections/shetech-bootcamp-2024-esercizio-4',
-      disabled: isEventStarted(),
+      disabled: false,
     },
 
   ]
